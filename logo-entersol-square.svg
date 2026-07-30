@@ -1,23 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
-  <!-- Icono cuadrado: camión + circuito -->
-  <g transform="translate(10, 12)">
-    <!-- Forma de camión abstracta -->
-    <rect x="4" y="15" width="36" height="24" rx="4" fill="#1e3a5f"/>
-    <rect x="40" y="21" width="14" height="18" rx="3" fill="#1e3a5f"/>
-    <!-- Ruedas -->
-    <circle cx="14" cy="43" r="5" fill="#0f766e"/>
-    <circle cx="32" cy="43" r="5" fill="#0f766e"/>
-    <circle cx="48" cy="43" r="5" fill="#0f766e"/>
-    <!-- Nodos digitales -->
-    <circle cx="12" cy="24" r="2.5" fill="#0f766e"/>
-    <circle cx="24" cy="30" r="2.5" fill="#0f766e"/>
-    <circle cx="36" cy="24" r="2.5" fill="#0f766e"/>
-    <line x1="12" y1="24" x2="24" y2="30" stroke="#0f766e" stroke-width="1.5"/>
-    <line x1="24" y1="30" x2="36" y2="24" stroke="#0f766e" stroke-width="1.5"/>
-    <!-- Señal GPS -->
-    <path d="M48 14 Q53 9 58 14" stroke="#0f766e" stroke-width="2" fill="none" stroke-linecap="round"/>
-    <path d="M45 10 Q53 3 61 10" stroke="#0f766e" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <defs>
+    <linearGradient id="sq-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield shape centered -->
+  <g transform="translate(10, 4)">
+    <path d="M30 2L55 16.4V45.6L30 60 5 45.6V16.4Z" fill="url(#sq-grad)"/>
+    <!-- Road / route -->
+    <path d="M20 48L30 18L40 48" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Center hub -->
+    <circle cx="30" cy="28" r="4" fill="white" opacity="0.95"/>
+    <!-- Radiating connections -->
+    <line x1="30" y1="24" x2="30" y2="15" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="33.5" y1="26.5" x2="41" y2="23" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+    <line x1="26.5" y1="26.5" x2="19" y2="23" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+    <!-- Endpoint dots -->
+    <circle cx="30" cy="14" r="2.2" fill="white" opacity="0.8"/>
+    <circle cx="42" cy="22.5" r="2" fill="white" opacity="0.6"/>
+    <circle cx="18" cy="22.5" r="2" fill="white" opacity="0.6"/>
+    <!-- Road dashes -->
+    <line x1="25.5" y1="42" x2="27.5" y2="34" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.4"/>
+    <line x1="34.5" y1="42" x2="32.5" y2="34" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.4"/>
   </g>
-  <!-- Texto debajo -->
-  <text x="40" y="72" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#1e3a5f" text-anchor="middle">Enter<tspan fill="#0f766e">Sol</tspan></text>
+  <!-- Text below -->
+  <text x="40" y="76" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="-0.3" text-anchor="middle" fill="#1e3a5f">Enter<tspan fill="#0f766e">Sol</tspan></text>
 </svg>
