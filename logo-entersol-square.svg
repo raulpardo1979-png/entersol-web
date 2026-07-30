@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Icono cuadrado: camión + circuito -->
+  <g transform="translate(10, 12)">
+    <!-- Forma de camión abstracta -->
+    <rect x="4" y="15" width="36" height="24" rx="4" fill="#1e3a5f"/>
+    <rect x="40" y="21" width="14" height="18" rx="3" fill="#1e3a5f"/>
+    <!-- Ruedas -->
+    <circle cx="14" cy="43" r="5" fill="#0f766e"/>
+    <circle cx="32" cy="43" r="5" fill="#0f766e"/>
+    <circle cx="48" cy="43" r="5" fill="#0f766e"/>
+    <!-- Nodos digitales -->
+    <circle cx="12" cy="24" r="2.5" fill="#0f766e"/>
+    <circle cx="24" cy="30" r="2.5" fill="#0f766e"/>
+    <circle cx="36" cy="24" r="2.5" fill="#0f766e"/>
+    <line x1="12" y1="24" x2="24" y2="30" stroke="#0f766e" stroke-width="1.5"/>
+    <line x1="24" y1="30" x2="36" y2="24" stroke="#0f766e" stroke-width="1.5"/>
+    <!-- Señal GPS -->
+    <path d="M48 14 Q53 9 58 14" stroke="#0f766e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M45 10 Q53 3 61 10" stroke="#0f766e" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  <!-- Texto debajo -->
+  <text x="40" y="72" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#1e3a5f" text-anchor="middle">Enter<tspan fill="#0f766e">Sol</tspan></text>
+</svg>
